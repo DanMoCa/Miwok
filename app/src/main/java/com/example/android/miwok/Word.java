@@ -5,15 +5,37 @@ package com.example.android.miwok;
  */
 
 public class Word {
-    private int mImageResourceId;
+    private int mImageResourceId = NO_IMAGE_PROVIDED;
+    private int mSoundResourceId = NO_SOUND_PROVIDED;
     private String mEnglish;
     private String mMiwok;
 
-    public Word(Integer imageResourceId,String english, String miwok){
+    private static final int NO_IMAGE_PROVIDED = -1;
+    private static final int NO_SOUND_PROVIDED = -1;
+
+    public Word(String english, String miwok){
+        mEnglish = english;
+        mMiwok = miwok;
+    }
+
+    public Word(String english, String miwok, int soundResource){
+        mEnglish = english;
+        mMiwok = miwok;
+        mSoundResourceId = soundResource;
+    }
+
+    public Word(int imageResourceId, String english, String miwok){
         mImageResourceId = imageResourceId;
         mEnglish = english;
         mMiwok = miwok;
     }
+    public Word(int imageResourceId, String english, String miwok, int soundResource){
+        mImageResourceId = imageResourceId;
+        mEnglish = english;
+        mMiwok = miwok;
+        mSoundResourceId = soundResource;
+    }
+
 
     public String getEnglish(){
         return mEnglish;
@@ -31,6 +53,19 @@ public class Word {
         mEnglish = english;
     }
 
-    public int getmImageResourceId(){ return mImageResourceId;}
+    public int getmImageResourceId(){
+        return mImageResourceId;
+    }
 
+    public int getmSoundResourceId(){
+        return mSoundResourceId;
+    }
+
+    public boolean hasSound(){
+        return mSoundResourceId != NO_SOUND_PROVIDED;
+    }
+
+    public boolean hasImage(){
+        return mImageResourceId != NO_IMAGE_PROVIDED;
+    }
 }
