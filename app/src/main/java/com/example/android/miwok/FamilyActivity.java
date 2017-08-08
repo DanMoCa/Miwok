@@ -29,16 +29,16 @@ public class FamilyActivity extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("one","lutti"));
-        words.add(new Word("two","otiiko"));
-        words.add(new Word("three","tolookosu"));
-        words.add(new Word("four","oyyisa"));
-        words.add(new Word("five","massokka"));
-        words.add(new Word("six","temmokka"));
-        words.add(new Word("seven","kenekaku"));
-        words.add(new Word("eight","kawinta"));
-        words.add(new Word("nine","wo'e"));
-        words.add(new Word("ten","na'aacha"));
+        words.add(new Word(R.drawable.family_father,"father","әpә"));
+        words.add(new Word(R.drawable.family_mother,"mother","әṭa"));
+        words.add(new Word(R.drawable.family_son,"son","angsi"));
+        words.add(new Word(R.drawable.family_daughter,"daughter","tune"));
+        words.add(new Word(R.drawable.family_older_brother,"older brother","taachi"));
+        words.add(new Word(R.drawable.family_younger_brother,"younger brother","chalitti"));
+        words.add(new Word(R.drawable.family_older_sister,"older sister","teṭe"));
+        words.add(new Word(R.drawable.family_younger_sister,"younger sister","kolliti"));
+        words.add(new Word(R.drawable.family_grandmother,"grandmother","ama"));
+        words.add(new Word(R.drawable.family_grandfather,"grandfather","paapa"));
 
         WordAdapter adapter = new WordAdapter(this,words);
 

@@ -5,10 +5,12 @@ package com.example.android.miwok;
  */
 
 public class Word {
+    private int mImageResourceId;
     private String mEnglish;
     private String mMiwok;
 
-    public Word(String english, String miwok){
+    public Word(Integer imageResourceId,String english, String miwok){
+        mImageResourceId = imageResourceId;
         mEnglish = english;
         mMiwok = miwok;
     }
@@ -28,5 +30,7 @@ public class Word {
     public void setEnglish(String english){
         mEnglish = english;
     }
+
+    public int getmImageResourceId(){ return mImageResourceId;}
 
 }

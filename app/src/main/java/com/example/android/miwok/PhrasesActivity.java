@@ -29,16 +29,16 @@ public class PhrasesActivity extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("one","lutti"));
-        words.add(new Word("two","otiiko"));
-        words.add(new Word("three","tolookosu"));
-        words.add(new Word("four","oyyisa"));
-        words.add(new Word("five","massokka"));
-        words.add(new Word("six","temmokka"));
-        words.add(new Word("seven","kenekaku"));
-        words.add(new Word("eight","kawinta"));
-        words.add(new Word("nine","wo'e"));
-        words.add(new Word("ten","na'aacha"));
+        words.add(new Word(0,"Where are you going?","minto wuksus"));
+        words.add(new Word(0,"What is your name?","tinnә oyaase'nә"));
+        words.add(new Word(0,"My name is...","oyaaset..."));
+        words.add(new Word(0,"How are you feeling?","michәksәs?"));
+        words.add(new Word(0,"I’m feeling good.","kuchi achit"));
+        words.add(new Word(0,"Are you coming?","әәnәs'aa?"));
+        words.add(new Word(0,"Yes, I’m coming.","hәә’ әәnәm"));
+        words.add(new Word(0,"I’m coming.","әәnәm"));
+        words.add(new Word(0,"Let’s go.","yoowutis"));
+        words.add(new Word(0,"Come here.","әnni'nem"));
 
         WordAdapter adapter = new WordAdapter(this,words);
 
