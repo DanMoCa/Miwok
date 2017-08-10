@@ -36,4 +36,6 @@
     <color name="category_phrases">#16AFCA</color>
 
     <color name="text_color">#FFFFFF</color>
+
+    <color name="tab_Default_color">#A8A19E</color>
 </resources>
